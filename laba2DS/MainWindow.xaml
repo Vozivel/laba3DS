@@ -1,0 +1,21 @@
+﻿<Window x:Class="laba2DS.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:laba2DS"
+        mc:Ignorable="d"
+        Title="laba3DS" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="MyDataGrid" Margin="0,44,0,0" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding ID_Game}" Header="Номер"/>
+                <DataGridTextColumn Binding="{Binding Game_Name}" Header="Название игры"/>
+                <DataGridTextColumn Binding="{Binding Platform_Name}" Header="Платформа"/>
+                <DataGridTextColumn Binding="{Binding Studio_Name}" Header="Студия"/>
+                <DataGridTextColumn Binding="{Binding Studio_Owner}" Header="Владелец"/>
+                <DataGridTextColumn Binding="{Binding Studio_Age}" Header="Возраст игры"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
